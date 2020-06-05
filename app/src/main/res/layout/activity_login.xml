@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Login">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#EDF0EC"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#3C423B"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-55dp"
+            app:srcCompat="@drawable/ttmlogo" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="75dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="Welcome!"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="Login to your account"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtUserNamee"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="50dp"
+            android:digits="abcdefghijklmnopqrstuvwxyzåäö1234567890@.-_"
+            android:ems="10"
+            android:fontFamily="@font/montserrat"
+            android:hint="Username"
+            android:inputType="textEmailAddress"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:ems="10"
+            android:fontFamily="@font/montserrat"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="143dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="50dp"
+            android:background="#5BD744"
+            android:fontFamily="@font/montserrat"
+            android:linksClickable="false"
+            android:text="Log in"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/txtCreateAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:fontFamily="@font/montserrat"
+            android:linksClickable="true"
+            android:text="Create account" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
